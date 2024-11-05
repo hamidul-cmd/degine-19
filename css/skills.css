@@ -1,0 +1,201 @@
+.skills {
+    background-image: url(pexels-luis-gomes-166706-546819.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    object-fit: cover;
+    position: relative;
+}
+
+.skills::after {
+    content: '';
+    background-color: #292F36;
+    height: 100%;
+    width: 100%;
+    opacity: 80%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.skills__container {
+    padding-block: 128px;
+    position: relative;
+    z-index: 3;
+}
+
+.titel {
+    text-align: center;
+    position: relative;
+}
+
+.titel h1 {
+    font-size: var(--H1-U);
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--color-brand1);
+    margin-top: 64px;
+}
+
+.titel.line {
+    margin-top: 16px;
+}
+
+.titel p {
+    font-size: var(--Para-M);
+    font-weight: 400;
+    font-family: var(--font-2);
+    color: var(--color-white);
+    margin-top: 16px;
+}
+
+.titel .svg {
+    font-size: 150px;
+    position: absolute;
+    top: 0;
+    right: 15%;
+    color: var(--color-brand1);
+}
+
+.discribtion__boxs {
+    display: flex;
+    justify-content: center;
+    gap: 128px;
+    margin-top: 64px;
+}
+
+.discribtion__box {
+    text-align: center;
+    background-color: var(--color-brand2);
+    padding: 16px 24px;
+    border-left: 8px solid var(--color-css);
+    border-radius: 8px;
+}
+
+.discribtion__box i {
+    font-size: 32px;
+    color: var(--color-bg1);
+}
+
+.discribtion__box h4 {
+    font-size: var(--Menu-M);
+    font-family: var(--font-2);
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--color-bg1);
+    margin-top: 8px;
+}
+
+.discribtion__box h5 {
+    font-size: var(--Para-M);
+    font-weight: 400;
+    font-family: var(--font-2);
+    color: var(--color-bg1);
+    margin-top: 8px;
+}
+
+.tolls {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 128px;
+    margin-top: 90px;
+}
+
+.toll {
+    text-align: center;
+}
+
+.toll .tolls__logo {
+    padding: 40px;
+    border-radius: 80px;
+}
+
+.toll .html {
+    background-color: var(--color-html);
+}
+
+.toll .css {
+    background-color: var(--color-css);
+}
+
+.toll .java {
+    background-color: var(--color-js);
+}
+
+.toll .react {
+    background-color: var(--color-react);
+}
+
+.toll .tolls__logo i {
+    font-size: 64px;
+    color: var(--color-white);
+}
+
+.toll .tolls__name {
+    font-size: var(--H2-U);
+    font-family: var(--font-2);
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 24px;
+}
+
+.toll .html__name {
+    color: var(--color-html);
+}
+
+.toll .css__name {
+    color: var(--color-css);
+}
+
+.toll .java__name {
+    color: var(--color-js);
+}
+
+.toll .react__name {
+    color: var(--color-react);
+}
+
+
+@media (max-width:768px) {
+    .skills__container {
+        padding-inline: 72px;
+        padding-block: 64px;
+    }
+
+    .titel .maous {
+        display: none;
+    }
+
+    .titel .svg {
+        display: none;
+    }
+
+    .discribtion__boxs {
+        gap: 32px;
+    }
+
+    .tolls {
+        row-gap: 32px;
+    }
+    .titel h1 {
+        margin-top: 0;
+    }
+}
+
+@media (max-width:390px) {
+    .skills__container {
+        padding-inline: 47px;
+    }
+    .discribtion__boxs {
+        flex-direction: column;
+    }
+    .tolls {
+        column-gap: 55px;
+
+    }
+    .toll .tolls__logo {
+        padding: 24px;
+    }
+
+}

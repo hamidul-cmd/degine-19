@@ -1,0 +1,128 @@
+.about {
+    background-color: #1A1E23;
+}
+
+.about__container {
+    padding: 128px;
+}
+
+.about__titel {
+    text-align: center;
+}
+
+.about__content {
+    display: flex;
+    gap: 128px;
+    margin-top: 128px;
+}
+
+.about__left h2 {
+    display: inline-block;
+    font-size: var(--H1-U);
+    font-weight: 400;
+    line-height: 1.1;
+    color: var(--color-white);
+    padding: 16px 40px;
+    background-color: var(--color-bg1);
+    border: 4px solid var(--color-brand1);
+    border-radius: 40px 0px 40px 0px;
+}
+
+.about__left p {
+    font-family: var(--font-2);
+    font-size: var(--Para-M);
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--color-white);
+    background-color: var(--color-bg1);
+    margin-top: 64px;
+    padding: 24px 40px;
+    border-radius: 40px;
+}
+
+.about__left p .content_p {
+    font-size: var(--Code-M);
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--color-brand2);
+}
+
+.about__left p .content_p1 {
+    display: block;
+    margin-bottom: 16px;
+
+}
+
+.about__left p .content_p2 {
+    display: block;
+    margin-top: 16px;
+}
+
+.about__left p .hello {
+    font-size: var(--Logo-M);
+    font-family: var(--font-2);
+    font-weight: 500;
+    line-height: 1.2;
+    color: var(--color-brand1);
+}
+
+.about__left p .color {
+    color: var(--color-brand1);
+}
+
+.about__left p .tablate {
+    display: none;
+}
+
+@media (max-width:1280px) {
+    .about__content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width:768px) {
+    .about__container {
+        padding: 64px;
+    }
+
+    .about__titel {
+        display: none;
+    }
+
+    .about__content {
+        gap: 64px;
+        margin-top: 0px;
+    }
+
+    .about__left p .tablate {
+        display: block;
+    }
+
+}
+
+@media (max-width:390px) {
+    .about__right img {
+        height: 364px;
+        width: 272px;
+    }
+
+    .about__container {
+        padding: 24px;
+    }
+
+    .about__left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about__left h2 {
+        font-size: var(--H2-U);
+    }
+
+    .about__left p {
+        margin-top: 32px;
+        padding: 24px 24px;
+    }
+}

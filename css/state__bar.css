@@ -1,0 +1,64 @@
+.state__bar {
+    background-color: var(--color-bg2);
+    width: fit-content;
+    padding: 8px 12px;
+    border: 1px solid var(--color-white);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    position: fixed;
+    top: 234px;
+    left: 64px;
+z-index: 10;
+}
+
+.state__links {
+    height: 40px;
+    width: 40px;
+    padding: 8px;
+    border-radius: 40px;
+    position: relative;
+}
+
+.state__links:hover{
+    background-color: var(--color-white);
+}
+
+.state__links i {
+    color: var(--color-white);
+    font-size: 24px;
+
+}
+
+.state__links:hover i {
+    color: var(--color-bg1);
+}
+
+.state__links span {
+    position: absolute;
+    bottom: 0;
+    right: -115px;
+    font-size: var(--Para-U);
+    font-weight: 300;
+    line-height: 1.1;
+    color: var(--color-bg1);
+    padding: 8px 16px;
+    border-radius: 8px;
+    background-color: var(--color-white);
+    text-align: left;
+    display: none;
+
+}
+
+.state__links:hover span {
+    display: block;
+}
+
+
+@media (max-width:768px) {
+    .state__bar {
+        display: none;
+    }
+}
